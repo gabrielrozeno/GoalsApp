@@ -10,4 +10,4 @@ const connectDB = async () => {
   }
 }; // função async de conectar com database mongo
 
-module.exports = connectDB; // exporta funcção de conexão da db
+module.exports = connectDB; // exporta função de conexão da db
