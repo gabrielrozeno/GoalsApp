@@ -13,6 +13,7 @@ app.use(express.json()); // middleware para aceitar json nos bodys das requests
 app.use(express.urlencoded({ extended: false })); // middleware para aceitar url encoded json
 
 app.use("/api/goals", require("./routes/goalRoutes")); // criando endpoint especifico e passando o arquivo com as rotas e seus controllers
+app.use("/api/users", require("./routes/userRoutes")); // criando endpoint especifico e passando o arquivo com as rotas e seus controllers
 
 app.use(errorHandler);
 
